@@ -1,5 +1,10 @@
 # Organization migration — runbook
 
+> **Update 2026-10-05:** `IRL-engine-AX` is retired (private). The public engine is now
+> [macropulse-lab/irl](https://github.com/macropulse-lab/irl) under FSL-1.1-ALv2, published from the
+> private `irl-engine` without history. The record below describes the original migration.
+
+
 Goal: move all MacroPulse + IRL repos from the personal account `GabrielGauss`
 into a GitHub **Organization** so the ecosystem lives at `github.com/<org>/*`
 with one profile front door.
