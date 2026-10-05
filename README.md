@@ -79,7 +79,8 @@ flowchart LR
 | Repo | What it is | Stack | Ships to |
 |------|-----------|-------|----------|
 | **[macropulse](https://github.com/GabrielGauss/macropulse)** 🔒 | Core: regime pipeline, REST API, dashboard, marketing site | Python / React | VPS · Vercel |
-| **[IRL-engine-AX](https://github.com/macropulse-lab/IRL-engine-AX)** | IRL Engine — pre-execution compliance gateway (public source) | Rust | self-host |
+| **[irl](https://github.com/macropulse-lab/irl)** | IRL Engine — pre-execution compliance gateway (FSL-1.1-ALv2, free to use) | Rust | self-host |
+| **[irl-gateway](https://github.com/macropulse-lab/irl-gateway)** | MCP server — any AI agent trades through IRL under a mandate | Python | PyPI · `irl-gateway` · MCP Registry |
 | **[irl-public-docs](https://github.com/macropulse-lab/irl-public-docs)** | IRL protocol spec, whitepaper, integration & compliance guides | Markdown | — |
 | **[irl-sdk-python](https://github.com/macropulse-lab/irl-sdk-python)** | IRL client SDK for Python | Python | PyPI · `irl-sdk` |
 | **[irl-sdk-ts](https://github.com/macropulse-lab/irl-sdk-ts)** | IRL client SDK for TypeScript | TypeScript | npm · `irl-sdk` |
@@ -96,8 +97,9 @@ flowchart LR
 **I want the macro regime signal** → get a free key at [macropulse.live](https://macropulse.live), or drop it into
 your AI assistant with `pip install macropulse-mcp`.
 
-**I want my trading agent to be auditable** → run the [sandbox](https://irl.macropulse.live), then self-host the
-[engine](https://github.com/macropulse-lab/IRL-engine-AX) and wrap your agent with `pip install irl-sdk`.
+**I want my trading agent to be auditable** → connect any MCP agent with `pip install irl-gateway`, or wrap
+your own code with `pip install irl-sdk`. Try the [sandbox](https://irl.macropulse.live), then self-host the
+[engine](https://github.com/macropulse-lab/irl).
 
 **I need to verify someone's proof** → you never need an account. Clone
 [irl-verify](https://github.com/macropulse-lab/irl-verify) and check any proof bundle offline, or use the
